@@ -1,17 +1,25 @@
-(function()
-{
+(function () {
 
     var app = angular.module('store', []);
 
-    app.controller('StoreController', function(){
+    app.controller('StoreController', function () {
 
-        this.product = gem
+        this.products = gems
 
     });
-    var gem ={
-        name: 'Dodecahedron',
-        price: 2.95,
-        description: 'Best product for best price!',
-    }
+    var gems = [
+        {
+            name: 'Dodecahedron',
+            price: 2.95,
+            description: 'Best product for best price!',
+            canPurchase: true
+        },
+        {
+            name: 'Pentagonal Gem',
+            price: 5.95,
+            description: 'Best product for best price!',
+            canPurchase: true
+        }
+    ]
 
 })();
